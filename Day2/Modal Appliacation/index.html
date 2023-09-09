@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share Modal | Ajay Kumar</title>
+    <link rel="shortcut icon"
+    href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngmart.com%2Ffiles%2F13%2FAvengers-A-Letter-Logo-Transparent-Background.png&f=1&nofb=1&ipt=1175922a70cca407816d7d66a7e0576eb1d2d3664b21c35c232c0d2d3e476afa&ipo=images"
+    type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <div class="wrapper">
+        <div class="card-wrapper">
+            <div>
+                <img src="assets/profile.JPG" alt="user">
+            </div>
+            <div class="user-name">
+                <h2>Ajay Kumar</h2>
+            </div>
+            <div class="designation">
+                <h3>Full-Stack Web Developer</h3>
+            </div>
+            <div class="bottom-group">
+                <button onclick="openModal()" class="btn-share btn-card">
+                <i class="fa-solid fa-share"></i><span></span>
+                <div>Profile</div>
+                </button>
+
+                <button class="btn-follow btn-card">Follow Me</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL COMPONENT  -->
+
+    <div class="modal">
+        <div class="modal-header">
+            <h1>Share My Profile</h1>
+            <div>
+                <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+            </div>
+        </div>
+        <div>
+            <h3>Share this via</h3>
+            <div class="icon-container">
+                <a href="https://www.linkedin.com/in/ajay-kumar-989639217/" class="icon" id="linkedin">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FAjayKum46247455" class="icon" id="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/ajay_kumar_hryna/" class="icon" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="icon" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="#" class="icon" id="telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- OVERLAY   -->
+    <div class="overlay" onclick="closeModal()"></div>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
