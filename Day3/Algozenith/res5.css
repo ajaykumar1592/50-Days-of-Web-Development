@@ -6,6 +6,15 @@ body{
     overflow-x: hidden;
     
 }
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+    justify-content: center;
+    margin-top: 320px;
+  }
 .upper-div{
    
     width: 100%;
