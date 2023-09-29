@@ -1,0 +1,115 @@
+
+/* .ulist li:nth-of-type(6){margin-left:200px;}*/
+/*.navul li a{font:16px/25px 'open_sansregular';}*/
+.navbar{box-shadow:2px 0px 3px 0px;}
+.navul li  a{font-size:16px;font-family: 'Open Sans', sans-serif;color:#26D672; text-decoration:none;}
+.navul li{text-transform: uppercase;position: relative; text-align: center;}
+.navul li::before{ color:#26D672; content: '';position: absolute;bottom: 0%;left: 0px;width: 100%;height: 2px;background: #26D672;display: block;-webkit-transform-origin: right top;
+-ms-transform-origin: right top;transform-origin: right top;-webkit-transform: scale(0, 1);-ms-transform: scale(0, 1);transform: scale(0, 1);
+-webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);transition: transform 0.4s cubic-bezier(1, 0, 0, 1)}
+.navul li:hover::before{color:#26D672;-webkit-transform-origin: left top;-ms-transform-origin: left top;transform-origin: left top;-webkit-transform: scale(1, 1);-ms-transform: scale(1, 1);transform: scale(1, 1)}
+/*buton hover*/
+.ulist li{background-color:#26D672;border-radius:7px;color:white;border:2px solid #26D672;}
+.ulist a{color:white;font-size:16px;font-family: 'Open Sans', sans-serif;}
+.ulist li:hover{background-color:white;color:#26D672;border:2px solid #26D672;transition:0.5s ease-in-out;}
+.ulist li a:hover{color:#26D672;}
+/*collapse buttton*/
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){background-color:black;}
+.navbar-toggler-icon{background-color:white;}
+/*  /....*/
+ .sec1 h1:before{ content:' '; position: absolute; background-image:url(../../img/1.png); left: 30px; top:40px; width: 347px; height: 91px;} 
+.sec1{position:relative;}
+.sec1 h1{font-size:45px;font-family: 'Open Sans', sans-serif;position:relative;line-height:60px;}
+.sec1 p{font-size:20px;line-height:35px;font-family: 'Open Sans', sans-serif;color:#707070;}
+.samediv p{font-size:18px;line-height:25px;font-family: 'Open Sans', sans-serif;color:#D68760;}
+.samediv h1{font-size:45px;line-height:60px;font-family: 'Open Sans', sans-serif;}
+.design{box-shadow: 0px 0px 4px 0px;}
+.design:hover{box-shadow: 0px 0px 30px 2px;}
+.design h1{font-size:20px;line-height:27px;font-family: 'Open Sans', sans-serif;}
+.design p{font-size:16px;font-family: 'Open Sans', sans-serif;color:#707070;}
+.creative{margin-top:5%;}
+.creative p{font-size:16px;line-height:32px;font-family: 'Open Sans', sans-serif;color:#707070;}
+.modren p{font-size:16px;line-height:22px;font-family: 'Open Sans', sans-serif;color:#707070;}
+.modren h4{font-size:20px;line-height:27px;font-family: 'Open Sans', sans-serif;}
+/* .forp{padding:0 23%;} */
+.carouseldesign{position:relative;padding:60px 0;}
+.carouseldesign h1{font-size:45px;font-family: 'Open Sans', sans-serif;}
+.carouseldesign p{font-size:16px;line-height:22px;font-family: 'Open Sans', sans-serif;}
+.smalimg{margin-left: 60px;}
+.smalimg1{margin-left: 60px;}
+.img2{margin-left: -40px;}
+.img3{margin-left: 40px;}
+.forimg{position:absolute;top:-50px;left: 41%;}
+.carousel{box-shadow: 0px 0px 5px 0px;}
+.carousel-indicators li{background-color: black;}
+footer{background-color: #fafafa;padding: 80px 0px;}
+.links li a{text-decoration: none;color:black;}
+
+/*.forposition{background-image:ulr(img/3979.png);}*/
+
+@media screen and (max-width:1200px){
+    .creative p{line-height: 25px;}
+}
+@media screen and (max-width:1025px){
+    .design p{font-size: 15px;}
+    .container{max-width: 898px;}
+}
+@media screen and (max-width:991px){
+    .navul li a{font-size: 12px;}
+    .container{max-width: 670px;}
+    .ulist a{font-size: 13px;}
+    .samediv h1{font-size: 36px;}
+    .hide{display: none;}
+    .samediv h1{font-size: 34px;}
+}
+@media screen and (max-width:767px){
+    .container{max-width: 570px;}
+    .forcenter{text-align: center;}
+}
+@media screen and (max-width:601px){
+    .sec1 h1{font-size: 40px;}
+    .samediv h1{font-size: 29px;line-height: 43px;}
+    .carouseldesign h1{font-size: 34px;}
+    .carouseldesign p{font-size: 11px;}
+}
+@media screen and (max-width:480px){
+    .sec1 h1{font-size: 36px;line-height: 49px;}
+    .container{max-width: 450px;}
+    .samediv h1{font-size: 26px;}
+}
+@media screen and (max-width:450px){
+    .container{max-width: 425px;}
+    .samediv h1{font-size: 24px;}
+}		
+@media screen and (max-width:425px){
+    .container{max-width: 400px;}
+    .samediv h1{font-size: 20px;line-height: 30px;}
+}	
+@media screen and (max-width:375px){
+    .container{max-width: 350px;}
+    .sec1 h1{font-size: 31px;line-height: 45px;}
+    .samediv h1{font-size: 16px;line-height: 26px;}
+    .carouseldesign h1{font-size: 27px;}
+    .forimg{left: 23%;}
+    .samediv p{line-height: 10px;}
+}
+@media screen and (max-width:320px){}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;  font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/opensans-bold-webfont.eot');
+    src: url('../fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-bold-webfont.woff') format('woff'),
+         url('../fonts/opensans-bold-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;  font-style: normal;
+}
